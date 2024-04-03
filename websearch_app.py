@@ -67,8 +67,8 @@ user_query = st.text_area('Enter your query:')
 with st.form('summarize_form', clear_on_submit=True):
     cohere_api_key = st.text_input('Cohere API Key', type='password')
     submitted = st.form_submit_button('Submit')
-    
-    if submitted and len(cohere_api_key):
+
+if submitted and len(cohere_api_key):
         if st.button('Get answer'):
             if not user_query: # if user_query is empty
                 st.write('Please enter a query to proceed.')
