@@ -71,7 +71,7 @@ with st.form('summarize_form', clear_on_submit=True):
     if submitted and len(cohere_api_key):
         if st.button('Get answer'):
             if not user_query: # if user_query is empty
-            st.write('Please enter a query to proceed.')
+                st.write('Please enter a query to proceed.')
         else:
             # Call the main function to get responses & citations
             with st.spinner('Getting results...'):
