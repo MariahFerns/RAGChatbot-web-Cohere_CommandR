@@ -31,7 +31,7 @@ import os
 def generate_rag_response_with_citations(query):
     '''
     Generates a response to the user query using Cohere's Command-R LLM with inbuilt RAG capability 
-    by referencing a set of user uploaded documents and includes citations in the response.
+    by web search and includes citations in the response.
     
     Parameters:
     - query (str): This is the query entered by the user.
